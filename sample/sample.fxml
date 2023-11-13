@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="scene" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Separator layoutX="-5.0" layoutY="656.0" prefHeight="20.0" prefWidth="1206.0" />
+      <Separator layoutX="993.0" orientation="VERTICAL" prefHeight="666.0" prefWidth="58.0" />
+      <ToggleButton fx:id="gtoggle" layoutX="1114.0" layoutY="409.0" mnemonicParsing="false" text="Gravitation" />
+      <Label layoutX="1060.0" layoutY="74.0" text="x" />
+      <Label layoutX="1136.0" layoutY="74.0" text="y" />
+      <Label layoutX="1062.0" layoutY="152.0" text="x" />
+      <Label layoutX="1134.0" layoutY="152.0" text="y" />
+      <Button fx:id="start" layoutX="1048.0" layoutY="495.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="128.0" text="START" />
+      <Button fx:id="stop" layoutX="1048.0" layoutY="543.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="128.0" text="STOP" />
+      <TextField layoutX="1036.0" layoutY="91.0" prefHeight="25.0" prefWidth="53.0" fx:id="xgeschw" />
+      <TextField fx:id="ygeschw" layoutX="1112.0" layoutY="91.0" prefHeight="25.0" prefWidth="53.0" />
+      <TextField layoutX="1040.0" layoutY="169.0" prefHeight="25.0" prefWidth="53.0" fx:id="xpos" />
+      <TextField fx:id="ypos" layoutX="1112.0" layoutY="169.0" prefHeight="25.0" prefWidth="53.0" />
+      <Label layoutX="1055.0" layoutY="392.0" text="Wind" />
+      <TextField fx:id="wind2" layoutX="1053.0" layoutY="409.0" prefHeight="25.0" prefWidth="53.0" />
+      <Label layoutX="1068.0" layoutY="232.0" prefHeight="17.0" prefWidth="83.0" text="Schiefe Ebene" textFill="RED">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <AnchorPane fx:id="scene1" layoutX="2.0" layoutY="-2.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="666.0" prefWidth="1021.0">
+         <children>
+            <Circle fx:id="circle" fill="DODGERBLUE" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+            <Line fx:id="linie" endX="209.0" endY="406.0" layoutX="-4.0" layoutY="-4.0" startY="267.0" strokeWidth="5.0" />
+            <Line fx:id="linie1" endX="600.0" endY="450.0" layoutX="-4.0" layoutY="-4.0" startY="450.0" strokeWidth="5.0" />
+            <Circle fx:id="circle1" fill="DODGERBLUE" layoutX="400.0" layoutY="429.0" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+            <Line fx:id="pendelLinie" endX="7.0" layoutX="762.0" layoutY="458.0" startX="-153.0" strokeWidth="20.0" />
+            <Circle fill="#ff1f1f" layoutX="769.0" layoutY="458.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
+            <Line fx:id="stopper" endX="91.0" endY="4.0" layoutX="915.0" layoutY="514.0" startX="24.0" startY="-13.85784912109375" strokeWidth="20.0" />
+            <Line fx:id="pendelStop" endX="-128.0" endY="121.0" layoutX="906.0" layoutY="294.0" startX="-128.0" startY="2.0" strokeWidth="5.0" />
+            <Line endX="91.0" endY="4.0" layoutX="852.0" layoutY="482.0" startX="106.0" startY="-71.0" strokeWidth="20.0" />
+         </children></AnchorPane>
+      <Label layoutX="1025.0" layoutY="14.0" text="EINGABEN MIT ENTER BESTÄTIGEN" underline="true">
+         <font>
+            <Font name="System Bold" size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="1040.0" layoutY="258.0" prefHeight="17.0" prefWidth="58.0" text="x-Position" />
+      <Label layoutX="1116.0" layoutY="258.0" prefHeight="17.0" prefWidth="58.0" text="y-Position" />
+      <TextField fx:id="endeX" layoutX="1040.0" layoutY="280.0" prefHeight="25.0" prefWidth="53.0" />
+      <TextField fx:id="endeY" layoutX="1114.0" layoutY="280.0" prefHeight="25.0" prefWidth="53.0" />
+      <TextField fx:id="ausgabe" layoutX="2.0" layoutY="673.0" prefHeight="123.0" prefWidth="1021.0" />
+      <Label layoutX="1063.0" layoutY="314.0" prefHeight="17.0" prefWidth="95.0" text="Aktueller Winkel" />
+      <TextField fx:id="winkel" layoutX="1079.0" layoutY="333.0" prefHeight="25.0" prefWidth="53.0" />
+      <Separator layoutX="1019.0" layoutY="54.0" prefHeight="5.0" prefWidth="180.0" />
+      <Label layoutX="1059.0" layoutY="59.0" text="Geschwindigkeit" textFill="RED">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Separator layoutX="1019.0" layoutY="130.0" prefHeight="5.0" prefWidth="180.0" />
+      <Label layoutX="1081.0" layoutY="138.0" text="Position" textFill="RED">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Button fx:id="restart" layoutX="1048.0" layoutY="592.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="128.0" text="RESTART" />
+      <Separator layoutX="1019.0" layoutY="220.0" prefHeight="5.0" prefWidth="180.0" />
+      <Separator layoutX="1019.0" layoutY="375.0" prefHeight="5.0" prefWidth="180.0" />
+      <Label layoutX="1083.0" layoutY="379.0" prefHeight="17.0" prefWidth="53.0" text="Einflüsse" textFill="RED">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Separator layoutX="1021.0" layoutY="456.0" prefHeight="5.0" prefWidth="180.0" />
+      <CheckBox fx:id="colormode" layoutX="1035.0" layoutY="711.0" mnemonicParsing="false" text="Colormode">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </CheckBox>
+   </children>
+</AnchorPane>
