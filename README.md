@@ -1,5 +1,8 @@
 # Ball-Simulation
 
+
+![]([https://github.com/dome385/mitarbeiterliste/blob/main/recording.gif](https://github.com/dome385/Ball-Simulation/blob/main/Recording%202023-11-17%20at%2023.57.57.gif))
+
 Simulation für die Bewegung einer Kugel auf einer Kugelbahn.
 Die Kugel beginnt auf einer schrägen Bahn zu rollen und bewegt sich dann physikalisch korrekt durch die gesamte Bahn.
 Startwinkel und- geschwindigkeit sind zur Laufzeit anpasspar.
